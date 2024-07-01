@@ -1,3 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // JavaScript code can be added here if needed for additional functionality
+    const menuIcon = document.getElementById('menu-icon');
+    const navList = document.getElementById('nav-list');
+
+    menuIcon.addEventListener('click', function() {
+        navList.classList.toggle('nav-active');
+    });
 });
