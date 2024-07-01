@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomoyasu Koumuten</title>
+    <title>ホーム - Tomoyasu Koumuten</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list" id="nav-list">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="about.html">私たちについて</a></li>
                 <li><a href="services.html">サービス</a></li>
@@ -17,43 +22,24 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="home">
-        <h1>ようこそ、Tomoyasu Koumutenへ</h1>
-        <p>高品質な建設サービスを提供します。</p>
-    </section>
 
-    <section id="about">
-        <h2>私たちについて</h2>
-        <p>Tomoyasu Koumutenは、信頼と品質を重視する建設会社です。</p>
-    </section>
-
-    <section id="services">
-        <h2>サービス</h2>
-        <div class="service">
-            <h3>住宅建設</h3>
-            <p>私たちは高品質な住宅建設を提供します。</p>
+    <section id="slider">
+        <div class="slide fade">
+            <img src="image1.jpg" alt="スライド1">
         </div>
-        <div class="service">
-            <h3>リフォーム</h3>
-            <p>あなたの家を新しくします。</p>
+        <div class="slide fade">
+            <img src="image2.jpg" alt="スライド2">
         </div>
+        <div class="slide fade">
+            <img src="image3.jpg" alt="スライド3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </section>
 
-    <section id="contact">
-        <h2>お問い合わせ</h2>
-        <form>
-            <label for="name">名前:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">メール:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">メッセージ:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">送信</button>
-        </form>
+    <section id="welcome">
+        <h2>ようこそTomoyasu Koumutenへ</h2>
+        <p>私たちは高品質な住宅建設とリフォームを提供する建設会社です。お客様のニーズに合わせたカスタマイズされたサービスを提供します。</p>
     </section>
 
     <footer>
