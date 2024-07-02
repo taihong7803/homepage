@@ -10,6 +10,8 @@ header {
     background-color: #1e3a8a; /* ヘッダーを濃い青に */
     color: white;
     padding: 10px 0;
+    position: relative;
+    z-index: 10; /* ヘッダーを一番上に表示 */
 }
 
 nav {
@@ -120,11 +122,13 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 5; /* フッターを他の要素より上に表示 */
 }
 
 @media (max-width: 768px) {
     .menu-icon {
         display: flex;
+        z-index: 20; /* ハンバーガーメニューを一番上に表示 */
     }
 
     nav ul {
@@ -135,6 +139,7 @@ footer {
         top: 50px;
         left: -100%;
         transition: left 0.3s ease;
+        z-index: 15; /* メニューリストを一番上に表示 */
     }
 
     nav ul.nav-active {
