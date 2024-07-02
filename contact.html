@@ -9,7 +9,12 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list" id="nav-list">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="about.html">私たちについて</a></li>
                 <li><a href="services.html">サービス</a></li>
@@ -20,16 +25,15 @@
 
     <section id="contact">
         <h2>お問い合わせ</h2>
-        <p>ご質問やご相談がございましたら、以下のフォームよりお問い合わせください。お返事はできるだけ早くお送りいたします。</p>
-        <form action="#" method="post">
-            <label for="name">名前:</label>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">お名前:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">メールアドレス:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="message">メッセージ:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" rows="6" required></textarea>
 
             <button type="submit">送信</button>
         </form>
