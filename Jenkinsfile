@@ -1,5 +1,5 @@
 pipeline {
-    argetnt any
+    agent any
     stages {
         stage("sample") {
             steps {
